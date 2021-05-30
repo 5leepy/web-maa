@@ -142,11 +142,13 @@
 				height: inherit;
 				line-height: inherit;
 			}
+			.logo-nav {
+				display: none;
+			}
 
 			nav {
 				height: inherit;
 				line-height: inherit;
-
 				ul {
 					@include vendor('display', 'flex');
 					height: inherit;
