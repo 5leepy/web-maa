@@ -1,0 +1,79 @@
+.container-top {
+  background-color: $primaryColor;
+  height: 20vh;
+  display: block;
+  max-width: 100vw;
+  padding: 0;
+  .warp {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+#about {
+  position: relative;
+  .container {
+    max-width: 65vw;
+    height: 1000px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      line-height: 2rem;
+    }
+    h6 {
+      color: darken($primaryColor, 20%);
+    }
+    @media (max-width: 992px) {
+        max-width: 90vw;
+    }
+  }
+  @media (max-width: 991.5px) {
+    .container {
+      padding-top: 2rem;
+      max-width: 90vw;
+      height: auto;
+      margin: auto;
+      max-height: 100%;
+
+    }
+  }
+
+  
+
+  .nav-pills {
+    justify-content: center;
+    .nav-link {
+      border-radius: 0;
+      color: $tertiaryColor;
+      background-color: $primaryColor;
+      font-weight: 500;
+      &.active {
+        color: $primaryColor;
+        background-color: $tertiaryColor;
+        font-weight: 700;
+      }
+    }
+    .vision-btn {
+      width: 100px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    .mission-btn {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+  .nav {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .tab-content {
+    line-height: 2rem;
+  }
+}

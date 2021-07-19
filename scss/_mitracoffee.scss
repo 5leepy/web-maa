@@ -1,0 +1,58 @@
+.mitracoffee {
+    .container-fluid {
+        height: 1500px;
+        max-height: 80vh;
+        background-color: $primaryColor;
+    }
+    .section-header {
+        h3 {
+          font-size: 36px;
+          text-align: center;
+          font-weight: 500;
+          position: relative;
+          padding: 60px 0;
+          margin: 0;
+        }
+      }
+      
+
+      
+        .clients-wrap {
+            justify-content: center;
+            align-items: center;
+          margin: 2rem 2rem 2rem;
+          
+        }
+      
+        .client-logo {
+          padding: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;  
+          width: 100%;
+          transition: .3s ease-in-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+        
+        img {
+          
+          max-width: 200px;
+        }
+        @media (max-width: 991.5px) {
+            .container-fluid {
+                height: 1000px;
+              max-height: 100%;
+        
+            }
+          }
+        @media (max-width: 768px) {
+            .container-fluid {
+                height: 1500px;
+              max-height: 100%;
+        
+            }
+          }
+}
