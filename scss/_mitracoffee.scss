@@ -1,5 +1,6 @@
 .mitracoffee {
     .container-fluid {
+        margin-top: 0;
         height: 1500px;
         max-height: 80vh;
         background-color: $primaryColor;
@@ -20,12 +21,12 @@
         .clients-wrap {
             justify-content: center;
             align-items: center;
-          margin: 2rem 2rem 2rem;
+          margin: 0rem 2rem 0rem;
           
         }
       
         .client-logo {
-          padding: 64px;
+          padding: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -39,7 +40,7 @@
         
         img {
           
-          max-width: 200px;
+          max-width: 150px;
         }
         @media (max-width: 991.5px) {
             .container-fluid {

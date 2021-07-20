@@ -247,11 +247,15 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto 0;
-  padding: 0.5rem;
+  margin: 0.2rem auto 0;
+  padding: 1rem;
   color: #19a09a;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+#sideNav .navbar-brand .img-profile {
+  max-width: 170px;
 }
 
 @media (max-width: 992px) {
@@ -260,8 +264,7 @@ li {
   }
   #sideNav .navbar-brand .img-profile {
     max-width: 35px;
-    padding-right: 10px;
-    padding-top: 5px;
+    padding-right: 7px;
   }
 }
 
@@ -632,6 +635,23 @@ li {
   background-image: url(/assets/img/kolokarimata.jpg);
 }
 
+.business .kolo .img .logokolo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.business .kolo .img .logokolo img {
+  width: 50%;
+}
+
 .business .dinamis {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -675,6 +695,7 @@ li {
 }
 
 .mitracoffee .container-fluid {
+  margin-top: 0;
   height: 1500px;
   max-height: 80vh;
   background-color: #19a09a;
@@ -696,11 +717,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem 2rem 2rem;
+  margin: 0rem 2rem 0rem;
 }
 
 .mitracoffee .client-logo {
-  padding: 64px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -722,7 +743,7 @@ li {
 }
 
 .mitracoffee img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 @media (max-width: 991.5px) {

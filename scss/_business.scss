@@ -30,6 +30,16 @@
         background-color: $primaryColor;
         .img {
             background-image: url(/assets/img/kolokarimata.jpg);
+            .logokolo {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 50%;
+                }
+                
+            }
         }
         
     }
