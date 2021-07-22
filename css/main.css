@@ -13,7 +13,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 16rem;
   }
 }
 
@@ -239,7 +239,7 @@ li {
 @media (min-width: 992px) {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: left;
-    padding-left: 2.5rem;
+    padding-left: 1.2rem;
   }
 }
 
@@ -279,9 +279,18 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 17rem;
+    width: 16rem;
     height: 100vh;
   }
+}
+
+#sideNav .underlogo {
+  width: 100%;
+  margin-top: -2.5rem;
+}
+
+#sideNav .underlogo img {
+  width: 100%;
 }
 
 .carousel-item {
