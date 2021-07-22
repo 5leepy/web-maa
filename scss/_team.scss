@@ -1,34 +1,38 @@
 .team {
+  position: relative;
+  background-color: white;
   .container {
-    padding-top: 150px;
     height: 1500px;
     max-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .row .col-lg-4 {
       display: flex;
       justify-content: center;
     }
   }
-
+  
   .card {
     position: relative;
     padding: 0;
     margin: 0 !important;
     border-radius: 20px;
     overflow: hidden;
-    max-width: 280px;
-    max-height: 340px;
+    max-width: 300px;
+    max-height: 400px;
     cursor: pointer;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
 
     .card-image {
       width: 100%;
-      max-height: 340px;
+      max-height: 400px;
 
       img {
-        width: 100%;
-        max-height: 340px;
+        height: 100%;
+        max-height: 500px;
         object-fit: cover;
       }
     }
@@ -36,7 +40,7 @@
     .card-content {
       position: absolute;
       bottom: -180px;
-      color: #fff;
+
       background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(15px);
       min-height: 140px;
@@ -115,4 +119,5 @@
       }
     }
   }
+
 }

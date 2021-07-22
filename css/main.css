@@ -417,6 +417,19 @@ li {
   }
 }
 
+#about .container ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(/assets/img/logotilt.png);
+  background-size: 6rem;
+  opacity: .01;
+  z-index: -1;
+}
+
 @media (max-width: 991.5px) {
   #about .container {
     padding-top: 2rem;
@@ -466,10 +479,23 @@ li {
   line-height: 2rem;
 }
 
+.team {
+  position: relative;
+  background-color: white;
+}
+
 .team .container {
-  padding-top: 150px;
   height: 1500px;
   max-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .team .container .row .col-lg-4 {
@@ -487,22 +513,20 @@ li {
   margin: 0 !important;
   border-radius: 20px;
   overflow: hidden;
-  max-width: 280px;
-  max-height: 340px;
+  max-width: 300px;
+  max-height: 400px;
   cursor: pointer;
   border: none;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .team .card .card-image {
   width: 100%;
-  max-height: 340px;
+  max-height: 400px;
 }
 
 .team .card .card-image img {
-  width: 100%;
-  max-height: 340px;
+  height: 100%;
+  max-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -510,7 +534,6 @@ li {
 .team .card .card-content {
   position: absolute;
   bottom: -180px;
-  color: #fff;
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -701,6 +724,10 @@ li {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.mitracoffee {
+  position: relative;
 }
 
 .mitracoffee .container-fluid {
