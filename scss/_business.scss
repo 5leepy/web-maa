@@ -49,6 +49,12 @@
         color: $primaryColor;
         .img {
             background-image: url(/assets/img/dinamiscrtv.jpg);
+            .linkdinamis {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
     .mcm {
@@ -56,6 +62,21 @@
         background-color: $primaryColor;
         .img {
             background-image: url(/assets/img/mitracoffee.jpg);
+            .textmcm {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    
+                    text-align: start;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 2.2rem;
+                    color: $primaryColor;
+                    text-shadow: 2px 2px 8px #252525;
+                }
+            }
         }
     }
     @media (max-width: 576px) {

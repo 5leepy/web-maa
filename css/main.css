@@ -696,6 +696,19 @@ li {
   background-image: url(/assets/img/dinamiscrtv.jpg);
 }
 
+.business .dinamis .img .linkdinamis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .business .mcm {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -705,6 +718,28 @@ li {
 
 .business .mcm .img {
   background-image: url(/assets/img/mitracoffee.jpg);
+}
+
+.business .mcm .img .textmcm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.business .mcm .img .textmcm h2 {
+  text-align: start;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #19a09a;
+  text-shadow: 2px 2px 8px #252525;
 }
 
 @media (max-width: 576px) {
