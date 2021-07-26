@@ -1,10 +1,12 @@
 .mitracoffee {
   position: relative;
+  
     .container-fluid {
         margin-top: 0;
         height: 1500px;
         max-height: 80vh;
         background-color: $primaryColor;
+          
     }
     .section-header {
         h3 {
@@ -17,12 +19,15 @@
         }
       }
       
-
+        
       
         .clients-wrap {
             justify-content: center;
             align-items: center;
           margin: 0rem 2rem 0rem;
+          @media (max-width: 760px) {
+            justify-content: space-between;
+          }
           
         }
       
@@ -41,20 +46,27 @@
         
         img {
           
-          max-width: 150px;
+          max-width: 200px;
+          @media (max-width: 1236px) {
+            max-width: 150px;
+          }
+          @media (max-width: 576px) {
+            max-width: 110px;
+          }
         }
         @media (max-width: 991.5px) {
             .container-fluid {
-                height: 1000px;
+                height: 700px;
               max-height: 100%;
         
             }
           }
-        @media (max-width: 768px) {
+        @media (max-width: 760px) {
             .container-fluid {
-                height: 1500px;
+                height: 800px;
               max-height: 100%;
         
             }
           }
+          @include background;   
 }
