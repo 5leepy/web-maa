@@ -900,6 +900,72 @@ li {
   z-index: -1;
 }
 
+#project .carousel-item {
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#project .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#project .carousel-item .container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#project .carousel-item h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0;
+}
+
+#project .carousel-item p {
+  color: aliceblue;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  opacity: 0;
+}
+
+#project .carousel-item img {
+  opacity: 0;
+}
+
+#project .carousel-item.active h3 {
+  -webkit-animation: fadeInLeft 0.8s ease forwards;
+          animation: fadeInLeft 0.8s ease forwards;
+}
+
+#project .carousel-item.active p {
+  -webkit-animation: fadeInLeft 1s ease forwards;
+          animation: fadeInLeft 1s ease forwards;
+}
+
+#project .carousel-item.active img {
+  -webkit-animation: fadeInRight 2s ease forwards;
+          animation: fadeInRight 2s ease forwards;
+}
+
+#project .carousel-control-next, #project .carousel-control-prev {
+  width: 5%;
+}
+
 .container-fluid {
   padding: 0;
   max-width: 100vw;
