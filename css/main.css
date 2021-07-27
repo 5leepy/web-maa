@@ -920,7 +920,7 @@ li {
 
 #project .carousel-item .container {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -939,7 +939,7 @@ li {
   padding-top: 1.5rem;
   font-size: 1.1rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 1.5rem;
   opacity: 0;
 }
 
@@ -964,6 +964,72 @@ li {
 
 #project .carousel-control-next, #project .carousel-control-prev {
   width: 5%;
+}
+
+#careers .container-fluid {
+  margin-top: 0;
+  height: 1500px;
+  max-height: 80vh;
+  background-color: #19a09a;
+}
+
+#careers .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+#careers .container-fluid .container .job-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  height: 320px;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 90px;
+  cursor: not-allowed;
+  opacity: .5;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#careers .container-fluid .container .job-logo img {
+  max-width: 80%;
+}
+
+#careers .container-fluid .container .active {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#careers .container-fluid .container .active:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#careers h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+  color: whitesmoke;
 }
 
 .container-fluid {

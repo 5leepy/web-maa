@@ -1,0 +1,47 @@
+#careers {
+    .container-fluid {
+        margin-top: 0;
+        height: 1500px;
+        max-height: 80vh;
+        background-color: $primaryColor;
+          
+        .container {
+            display: flex;
+            height: 80%;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            .job-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 320px;
+                height: 320px;
+                background-color: whitesmoke;
+                padding: 30px;
+                border-radius: 90px;
+                cursor: not-allowed;
+                opacity: .5;
+                transition: .3s ease-in-out;
+                img {
+                    max-width: 80%;
+                }
+            }
+            .active {
+                opacity: 1;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 3rem;
+        color: whitesmoke;
+    }
+}
