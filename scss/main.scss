@@ -1,7 +1,7 @@
 @import"var";
+@import"mixins";
 @import"globals";
 @import"animations";
-@import"mixins";
 @import"sidenav";
 @import"intro";
 @import"about";
@@ -10,12 +10,9 @@
 @import"mitracoffee";
 @import"project";
 @import"careers";
+@import"contact";
 
 
 
-.container-fluid {
-    padding: 0;
-    max-width: 100vw;
-}
 
 
