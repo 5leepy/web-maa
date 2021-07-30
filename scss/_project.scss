@@ -26,6 +26,9 @@
              font-size: 3rem;
              font-weight: 700;
              opacity: 0;
+             @media (max-width: 1200px) {
+              font-size: 2.5rem;
+            }
          }
          p {
              color: aliceblue;
@@ -35,6 +38,12 @@
              font-weight: 500;
              line-height: 1.5rem;
              opacity: 0;
+             @media (max-width: 1250px) {
+              font-size: 1rem;
+            }
+             @media (max-width: 1200px) {
+              font-size: 0.875rem;
+            }
          }
          img {
              opacity: 0;

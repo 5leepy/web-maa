@@ -1,12 +1,16 @@
 #team {
   position: relative;
   .container {
-    height: 1500px;
-    max-height: 80vh;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     @include background;
+    @media (min-width: 992px) {
+        height: 1500px;
+        max-height: 80vh;
+    }
+    
   }
   .member {
     margin-bottom: 20px;
@@ -14,8 +18,8 @@
     .pic {
       overflow: hidden;
       text-align: center;
-      max-height: 350px;
-      img  {
+      max-height: 290px;
+      img {
         max-width: 80%;
         width: 180px;
       }
@@ -24,7 +28,7 @@
       overflow: hidden;
       text-align: center;
       max-height: 380px;
-      img  {
+      img {
         max-width: 100%;
         width: 200px;
       }
@@ -34,6 +38,10 @@
       color: #fff;
       padding: 15px;
       border-radius: 5px 5px 15px 15px;
+      @media (min-width: 992px) {
+        max-width: 210px;
+        
+      }
     }
     .details-bod {
       background-color: $primaryColor;
@@ -53,6 +61,4 @@
       font-weight: 400;
     }
   }
-  
-
 }

@@ -517,8 +517,7 @@ li {
 }
 
 #team .container {
-  height: 1500px;
-  max-height: 80vh;
+  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,6 +542,13 @@ li {
   z-index: -1;
 }
 
+@media (min-width: 992px) {
+  #team .container {
+    height: 1500px;
+    max-height: 80vh;
+  }
+}
+
 #team .member {
   margin-bottom: 20px;
   text-align: center;
@@ -551,7 +557,7 @@ li {
 #team .member .pic {
   overflow: hidden;
   text-align: center;
-  max-height: 350px;
+  max-height: 290px;
 }
 
 #team .member .pic img {
@@ -575,6 +581,12 @@ li {
   color: #fff;
   padding: 15px;
   border-radius: 5px 5px 15px 15px;
+}
+
+@media (min-width: 992px) {
+  #team .member .details {
+    max-width: 210px;
+  }
 }
 
 #team .member .details-bod {
@@ -893,6 +905,12 @@ li {
   opacity: 0;
 }
 
+@media (max-width: 1200px) {
+  #project .carousel-item h3 {
+    font-size: 2.5rem;
+  }
+}
+
 #project .carousel-item p {
   color: aliceblue;
   padding-right: 1.5rem;
@@ -901,6 +919,18 @@ li {
   font-weight: 500;
   line-height: 1.5rem;
   opacity: 0;
+}
+
+@media (max-width: 1250px) {
+  #project .carousel-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #project .carousel-item p {
+    font-size: 0.875rem;
+  }
 }
 
 #project .carousel-item img {
