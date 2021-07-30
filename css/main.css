@@ -56,6 +56,12 @@ h2 {
   font-weight: 700;
 }
 
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
 h5 {
   font-weight: 600;
   font-size: 1.35rem;
@@ -96,6 +102,12 @@ li {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .container-top {
+    height: 15vh;
+  }
 }
 
 .container-fluid {
@@ -359,6 +371,12 @@ li {
   z-index: -1;
 }
 
+@media (max-width: 576px) {
+  #hero .carousel-item {
+    min-height: 90vh;
+  }
+}
+
 #hero .carousel-item .container {
   position: absolute;
   left: 50%;
@@ -428,6 +446,13 @@ li {
 
 #about .container h5 {
   line-height: 2rem;
+}
+
+@media (max-width: 576px) {
+  #about .container h5 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
 }
 
 #about .container h6 {
@@ -504,6 +529,18 @@ li {
 #about .tab-content li {
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+  #about .tab-content h6 {
+    text-align: center;
+  }
+  #about .tab-content p {
+    font-size: 1.1rem;
+  }
+  #about .tab-content li {
+    font-size: 1rem;
+  }
 }
 
 #team {
@@ -946,9 +983,16 @@ li {
 
 #careers .container-fluid {
   margin-top: 0;
-  height: 1500px;
+  height: 980px;
   max-height: 80vh;
   background-color: #19a09a;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+  #careers .container-fluid {
+    max-height: 100%;
+  }
 }
 
 #careers .container-fluid .container {
@@ -962,6 +1006,16 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 576px) {
+  #careers .container-fluid .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
 }
 
 #careers .container-fluid .container .job-logo {
@@ -985,6 +1039,20 @@ li {
   transition: 0.3s ease-in-out;
 }
 
+@media (max-width: 1200px) {
+  #careers .container-fluid .container .job-logo {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  #careers .container-fluid .container .job-logo {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 #careers .container-fluid .container .job-logo img {
   max-width: 80%;
 }
@@ -1005,8 +1073,14 @@ li {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: whitesmoke;
+}
+
+@media (max-width: 576px) {
+  #careers h1 {
+    font-size: 1.6rem;
+  }
 }
 
 #contact {

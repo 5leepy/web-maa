@@ -10,6 +10,11 @@
     align-items: center;
     h5 {
       line-height: 2rem;
+      @media (max-width: 576px) {
+        text-align: center ;
+        font-size: 1.1rem;
+        
+      }
     }
     h6 {
       color: darken($primaryColor, 20%);
@@ -71,6 +76,17 @@
     li {
       font-weight: 400;
       font-size: 1.1rem;
+    }
+    @media (max-width: 576px) {
+      h6 {
+        text-align: center
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      li {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -89,6 +89,12 @@
     <!-- Page Content-->
     <section class="hero" id="hero">
       <div
+        data-bs-spy="scroll"
+        data-bs-target="#sideNav"
+        data-bs-offset="0"
+        tabindex="0"
+      ></div>
+      <div
         id="carouselIntro"
         class="carousel slide carousel-fade"
         data-bs-ride="carousel"
@@ -167,7 +173,7 @@
       >
         <h5>
           Mitra Amerta Asia was Founded in 2020 in Surabaya,Indonesia as coffee
-          shop under the name "kolokial", With this company's great expectations
+          shop under the name "<strong>Kolokial</strong>" , With this company's great expectations
           we can make a great Community over asia with our products.
         </h5>
         <!-- vision mission -->
@@ -528,15 +534,13 @@
           <h2>Our Project</h2>
         </div>
       </div>
-      <div
-        id="carousel-project"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-spy="scroll"
-        data-bs-target="#sideNav"
-        data-bs-offset="0"
-        tabindex="0"
-      >
+      <div id="carousel-project" class="carousel slide" data-bs-ride="carousel">
+        <div
+          data-bs-spy="scroll"
+          data-bs-target="#sideNav"
+          data-bs-offset="0"
+          tabindex="0"
+        ></div>
         <div class="carousel-inner">
           <div
             class="carousel-item active"
@@ -548,7 +552,7 @@
                   <img
                     src="/assets/img/prroject-img.jpg"
                     alt=""
-                    class="col-md-6 float-md-end mb-3 ms-md-3"
+                    class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
                   />
                   <h3>Grand Opening Kolokial Coffee 3.0</h3>
                   <p>
@@ -583,7 +587,7 @@
                   <img
                     src="/assets/img/prroject-img.jpg"
                     alt=""
-                    class="col-md-6 float-md-end mb-3 ms-md-3"
+                    class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
                   />
                   <h3>Flea Market</h3>
                   <p>
@@ -612,7 +616,7 @@
                   <img
                     src="/assets/img/prroject-img.jpg"
                     alt=""
-                    class="col-md-6 float-md-end mb-3 ms-md-3"
+                    class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
                   />
                   <h3>Event</h3>
                   <p>
@@ -678,6 +682,7 @@
           <div class="job-logo">
             <img src="/assets/img/logo-kolo-hitam.svg" alt="" />
           </div>
+        
         </div>
       </div>
     </section>
@@ -752,6 +757,6 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
