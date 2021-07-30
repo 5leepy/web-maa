@@ -5,12 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include background;
+
     @media (min-width: 992px) {
-        height: 1500px;
-        max-height: 80vh;
+      height: 1500px;
+      max-height: 80vh;
     }
-    
   }
   .member {
     margin-bottom: 20px;
@@ -40,7 +39,6 @@
       border-radius: 5px 5px 15px 15px;
       @media (min-width: 992px) {
         max-width: 210px;
-        
       }
     }
     .details-bod {
@@ -53,6 +51,9 @@
       font-weight: 700;
       margin-bottom: 2px;
       font-size: 1.125rem;
+      @media (max-width: 992px) {
+        max-width: 210px;
+      }
     }
     span {
       font-style: italic;

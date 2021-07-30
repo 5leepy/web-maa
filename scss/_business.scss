@@ -1,98 +1,94 @@
 .business {
-    .container-fluid {
-        height: 1500px;
-        max-height: 80vh;
+  .container-fluid {
+    height: 1500px;
+    max-height: 80vh;
+    display: flex;
+  }
+  .crd {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .img {
+      width: 100%;
+      height: 60%;
+      background-position: center;
+      background-size: cover;
+    }
+    .container {
+      display: flex;
+      height: 40%;
+      align-items: center;
+      p {
+        margin: 0;
+        font-weight: 500;
+        @media (max-width: 576px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .kolo {
+    flex: 1;
+    background-color: $primaryColor;
+    .img {
+      background-image: url(/assets/img/kolokarimata.jpg);
+      .logokolo {
         display: flex;
-        
-    }
-    .crd {
-        width: 100%;
         height: 100%;
-        text-align: center;
-        .img {
-            width: 100%;
-            height: 60%;
-            background-position: center;
-            background-size: cover;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 50%;
         }
-        .container{
-            display: flex;
-            height: 40%;
-            align-items: center;
-            p {
-                margin: 0;
-                font-weight: 500;
-                @media (max-width: 576px) {
-                    font-size: 0.9rem;
-                }
-            }
-        }
+      }
     }
-    .kolo {
-        flex: 1;
-        background-color: $primaryColor;
-        .img {
-            background-image: url(/assets/img/kolokarimata.jpg);
-            .logokolo {
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-                img {
-                    width: 50%;
-                }
-                
-            }
-        }
-        
+  }
+  .dinamis {
+    flex: 1;
+    background-color: $tertiaryColor;
+    color: $primaryColor;
+    .img {
+      background-image: url(/assets/img/dinamiscrtv.jpg);
+      .linkdinamis {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
     }
-    .dinamis {
-        flex: 1;
-        background-color: $tertiaryColor;
-        color: $primaryColor;
-        .img {
-            background-image: url(/assets/img/dinamiscrtv.jpg);
-            .linkdinamis {
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-            }
+  }
+  .mcm {
+    flex: 1;
+    background-color: $primaryColor;
+    .img {
+      background-image: url(/assets/img/mitracoffee.jpg);
+      .textmcm {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          text-align: start;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 2.2rem;
+          color: $primaryColor;
+          text-shadow: 2px 2px 8px #252525;
         }
+      }
     }
-    .mcm {
-        flex: 1;
-        background-color: $primaryColor;
-        .img {
-            background-image: url(/assets/img/mitracoffee.jpg);
-            .textmcm {
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-                h2 {
-                    
-                    text-align: start;
-                    text-transform: uppercase;
-                    font-weight: 900;
-                    font-size: 2.2rem;
-                    color: $primaryColor;
-                    text-shadow: 2px 2px 8px #252525;
-                }
-            }
-        }
+  }
+  @media (max-width: 576px) {
+    .container-fluid {
+      flex-direction: column;
+      max-height: 100%;
     }
-    @media (max-width: 576px) {
-        .container-fluid {
-            flex-direction: column;
-            max-height: 100%;
-        }
-        .img  {
-            width: 40%;
-        }
-        .container {
-            flex-direction: row;
-        }
+    .img {
+      width: 40%;
     }
-    @include background;
+    .container {
+      flex-direction: row;
+    }
+  }
+  @include background;
 }
