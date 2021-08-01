@@ -18,15 +18,21 @@
       overflow: hidden;
       text-align: center;
       max-height: 290px;
+      @media (max-width: 576px) {
+        max-height: 200px;
+      }
       img {
         max-width: 80%;
-        width: 180px;
+        width: 200px;
       }
     }
     .picbig {
       overflow: hidden;
       text-align: center;
       max-height: 380px;
+      @media (max-width: 576px) {
+        max-height: 230px;
+      }
       img {
         max-width: 100%;
         width: 200px;
