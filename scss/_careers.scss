@@ -1,70 +1,160 @@
 #careers {
-  background-color: $primaryColor;
-  .container-fluid {
-    // height: 980px;
-    // max-height: 80vh;
-    // background-color: $primaryColor;
-    // padding-bottom: 2rem;
-    // @media (max-width: 576px) {
-    //   max-height: 100%;
-    // }
-
-    .container {
-      display: flex;
-      height: 80%;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 2rem 0rem;
-      @media (max-width: 576px) {
-        flex-direction: column;
-        height: 100%;
-      }
-      .job-logo {
+    background-color: $secondaryColor;
+    margin: 0;
+    .container-fluid {
+      // height: 980px;
+      // max-height: 80vh;
+      // background-color: $primaryColor;
+      // padding-bottom: 2rem;
+      // @media (max-width: 576px) {
+      //   max-height: 100%;
+      // }
+  
+      .container {
         display: flex;
-        justify-content: center;
+        height: 80%;
+        justify-content: space-evenly;
         align-items: center;
-        width: 300px;
-        height: 300px;
-        background-color: whitesmoke;
-        padding: 25px;
-        border-radius: 60px;
-        cursor: not-allowed;
-        opacity: 0.5;
-        transition: 0.3s ease-in-out;
-        margin: 2rem
-        ;
-        @media (max-width: 1200px) {
-          width: 250px;
-          height: 250px;
+        padding: 2rem 0rem;
+        @media (max-width: 576px) {
+          flex-direction: column;
+          height: 100%;
         }
-        @media (max-width: 992px) {
-          width: 220px;
-          height: 220px;
+        .job-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+          height: 300px;
+          background-color: whitesmoke;
+          padding: 25px;
+          border-radius: 60px;
+          cursor: not-allowed;
+          opacity: 0.2;
+          transition: 0.3s ease-in-out;
+          margin: 2rem          ;
+          @media (max-width: 1200px) {
+            width: 250px;
+            height: 250px;
+          }
+          @media (max-width: 992px) {
+            width: 220px;
+            height: 220px;
+          }
+          img {
+            max-width: 80%;
+          }         
+           
+          
         }
-        
-        img {
-          max-width: 80%;
+        .active {
+          opacity: 1;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
-      .active {
-        opacity: 1;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
+    }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 2.5rem;
+      color: whitesmoke;
+      @media (max-width: 576px) {
+        font-size: 1.6rem;
+      }
+    }
+    
+  }
+  
+  #contact {
+    background-color: $secondaryColor;
+    padding-bottom: 50px;
+    .container-text {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h2 {
+          color: $textColor;
+      }
+      p {
+        font-weight: 500;
+        font-size: .8rem;
+        color: whitesmoke;
+      }
+    }
+    .contact-info {
+      margin-bottom: 20px;
+      text-align: center;
+      i {
+        font-size: 48px;
+        display: inline-block;
+        margin-bottom: 10px;
+        color: $tertiaryColor;
+      }
+      address {
+        margin-bottom: 0;
+        color: $textColor;
+      }
+      p {
+        margin-bottom: 0;
+        color: $textColor;
+      }
+      h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+      }
+      a {
+        color: $textColor;
         &:hover {
-          transform: scale(1.1);
+          color: whitesmoke;
         }
       }
     }
-  }
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: whitesmoke;
-    @media (max-width: 576px) {
-      font-size: 1.6rem;
+    .contact-address {
+      margin-bottom: 20px;
+    }
+    .contact-phone {
+      margin-bottom: 20px;
+    }
+    .contact-email {
+      margin-bottom: 20px;
     }
   }
-}
-
+  @media (min-width: 768px) {
+    #contact {
+      .contact-address {
+        padding: 20px 0;
+      }
+      .contact-phone {
+        padding: 20px 0;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+      }
+      .contact-email {
+        padding: 20px 0;
+      }
+    }
+  }
+  #footer {
+    background:$primaryColor;
+    color: $textColor;
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+  

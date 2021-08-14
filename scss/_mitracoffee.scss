@@ -1,65 +1,78 @@
 .mitracoffee {
   position: relative;
-
-  .container-fluid {
-    margin-top: 0;
-    height: 1500px;
-    max-height: 80vh;
-    background-color: $primaryColor;
+  background-color: $secondaryColor;
+  &::before {
+    content: "";
+    background-image: url(/assets/img/bg-01.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 1;
   }
-  .section-header {
-    h3 {
-      font-size: 36px;
-      text-align: center;
-      font-weight: 500;
-      position: relative;
-      padding: 60px 0;
-      margin: 0;
-    }
-  }
-
-  .clients-wrap {
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2rem 0rem;
-    @media (max-width: 760px) {
-      justify-content: space-between;
-    }
-  }
-
-  .client-logo {
-    padding: 50px;
+  .container-color {
+    position: relative;
+    height: 8.56rem;
+    display: block;
+    max-width: 100%;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
+    text-align: center;
+    h2 {
+      margin-top: 2rem;
+      color: white;
+      text-transform: uppercase;
     }
   }
+  .container-fluid {
+    position: relative;
+    z-index: 2;
+    .clients-wrap {
+      justify-content: center;
+      align-items: center;
+      margin: 0rem 2rem 0rem;
+      
+    }
+  
+    .client-logo {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    img {
+      max-width: 200px;
+      @media (max-width: 1236px) {
+        max-width: 150px;
+      }
+      @media (max-width: 576px) {
+        max-width: 110px;
+      }
+    }
+    @media (max-width: 991.5px) {
+      .container-fluid {
+        height: 700px;
+        max-height: 100%;
+      }
+    }
+    @media (max-width: 760px) {
+      .container-fluid {
+        height: 800px;
+        max-height: 100%;
+      }
+    }
 
-  img {
-    max-width: 200px;
-    @media (max-width: 1236px) {
-      max-width: 150px;
-    }
-    @media (max-width: 576px) {
-      max-width: 110px;
-    }
   }
-  @media (max-width: 991.5px) {
-    .container-fluid {
-      height: 700px;
-      max-height: 100%;
-    }
-  }
-  @media (max-width: 760px) {
-    .container-fluid {
-      height: 800px;
-      max-height: 100%;
-    }
-  }
-  @include background;
 }

@@ -1,5 +1,4 @@
 @import"var";
-@import"mixins";
 @import"globals";
 @import"animations";
 @import"sidenav";
@@ -10,9 +9,13 @@
 @import"mitracoffee";
 @import"project";
 @import"careers";
-@import"contact";
+@import"recruit";
 
 
 
+.container-fluid {
+    padding: 0;
+    max-width: 100vw;
+}
 
 
