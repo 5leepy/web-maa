@@ -50,6 +50,9 @@
       min-height: 100%;
       text-align: center;
     }
+    @media (max-width: 576px) {
+      height: 43rem;
+    }
   }
 
   
