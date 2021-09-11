@@ -1,0 +1,126 @@
+.business {
+  .warp {
+    display: flex;
+  }
+  .container-color {
+    position: relative;
+    height: 8.56rem;
+    display: block;
+    max-width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $secondaryColor;
+    h2 {
+      color: $textColor;
+      text-transform: uppercase;
+    }
+    &::before {
+      content: "";
+      background-image: url(/assets/img/bg-01.png);
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+    }
+  }
+  .crd {
+    width: 23rem;
+    height: 30rem;
+    text-align: center;
+    @media (max-width: 576px) {
+      height: 50rem;
+      width: 100%;
+    }
+    .img {
+      width: 100%;
+      height: 60%;
+      background-position: center;
+      background-size: cover;
+      @media (max-width: 576px) {
+        height: 250px;
+      }
+    }
+    .container {
+      display: flex;
+      height: 40%;
+      align-items: center;
+      padding: 1.25rem;
+      p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+      @media (max-width: 576px) {
+        height: 230px;
+      }
+    }
+  }
+  .kolo {
+    flex: 1;
+    background-color: $secondaryColor;
+    .img {
+      background-image: url(/assets/img/kolokarimata.jpg);
+      .logokolo {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .dinamis {
+    flex: 1;
+    background-color: $textColor;
+    color: $secondaryColor;
+    .img {
+      background-image: url(/assets/img/dinamiscrtv.jpg);
+      .linkdinamis {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .mcm {
+    flex: 1;
+    background-color: $secondaryColor;
+    .img {
+      background-image: url(/assets/img/mitracoffee.jpg);
+      .textmcm {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          text-align: start;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 1.75rem;
+          color: $secondaryColor;
+          text-shadow: 2px 2px 4px #252525;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .warp {
+      flex-direction: column;
+      max-height: 100%;
+    }
+    .img {
+      width: 40%;
+    }
+    
+  }
+}
